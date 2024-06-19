@@ -19,8 +19,6 @@
     --purple: #a729f5;
     --bg-mobile: url(./assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(./assets/images/pattern-background-desktop-light.svg);
-
-    
 }
 body {
     height: 100svh;
@@ -56,8 +54,8 @@ header {
     height: 12px;
     border-radius: 999px;
 }
-main{
-  padding: 32px 24px;  
+main {
+    padding: 32px 24px;
 }
 .boas_vindas {
     margin-bottom: 40px;
@@ -72,10 +70,10 @@ main{
     font-weight: 500;
 }
 .boas_vindas p {
-   color: var(--secondary-text-color); 
-   font-size: 14px;
-   line-height: 150%;
-   font-style: italic
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 150%;
+    font-style: italic
 }
 
 .assuntos {
@@ -86,7 +84,7 @@ main{
 
 .assuntos button {
     border: none;
-    background:var(--button-bg);
+    background: var(--button-bg);
     display: flex;
     align-items: center;
     gap: 16px;
@@ -99,22 +97,21 @@ main{
 }
 
 .assuntos button div {
- width: 40px;
- height: 40px;   
- padding: 5px;
- border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .assuntos button img {
     width: 100%;
 }
 
-.botao_html div{
-  background: var(--bg-html);
-    
+.botao_html div {
+    background: var(--bg-html);
 }
 .botao_css div {
-    background:var(--bg-css) ;
+    background:var(--bg-css);
 }
 .botao_javascript div {
     background: var(--bg-javascript);
@@ -123,11 +120,53 @@ main{
     background: var(--bg-acessibilidade);
 }
 
-@media(min-widht: 1100px) {
+@media(min-width: 1100px) {
     body {
-        background: var(--bg-desktop);
-        background-size:cover ;
+        background: var(--bg-desktop) var(--bg-color);
+        background-size: cover;
         background-repeat: no-repeat;
 
+    }
+
+    header {
+        margin-block: 81px;
+    }
+
+    .tema img {
+
+    }
+
+    main {
+        display: flex;
+        max-width: 1160px;
+        margin-inline: auto;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .boas_vindas h1 {
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+
+    .boas_vindas p {
+        font-size: 20px;
+    }
+
+    .assuntos {
+        gap: 24px;
+    }
+
+    .assuntos button {
+        font-size: 20px;
+        padding: 20px;
+        gap: 32px;
+    }
+    .assuntos button div {
+        width: 56px;
+        height: 56px;
+        padding: 8px;
     }
 }
