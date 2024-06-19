@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="quiz.css">
     <title>Quiz App</title>
 </head>
-
 <body>
     <header>
         <div class="assunto">
@@ -30,23 +29,23 @@
     <main>
         <section class="pergunta">
             <p>Questão 6 de 10</p>
-
             <h2>Qual o significado de HTML?</h2>
             <div class="barra_progresso">
-                <div></div>
+               <div></div>
             </div>
         </section>
+
         <secction class="alternativas">
             <form action="">
-                <label for="alternativa_a">
+                <label for="alternativa_a" id="correta">
                     <input type="radio" id="alternativa_a" name="alternativa">
+
                     <div>
                         <span>A</span>
                         Hyper Trainer Marking Language
-                    </div>
+                        </div>
                 </label>
-
-                <label for="alternativa_b">
+                <label for="alternativa_b" id="errada">
                     <input type="radio" id="alternativa_b" name="alternativa">
                     <div>
                         <span>B</span>
@@ -67,7 +66,6 @@
                         Hyper Text Markup Leveler
                     </div>
                 </label>
-
             </form>
             <button>Enviar</button>
         </secction>
