@@ -7,18 +7,20 @@
 }
 :root {
     --bg-color: #f4f6fa;
-    --white: #fff;
-    --purple-hover: rgba(167, 41, 245, 0.6);
+    --bg-span: #f4f6fa;
+    --color-span: #626c7f;
+    --purple: #a729f5;
+    --purple-hover: rgba(167, 41, 245, 0.7);
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
     --button-bg: #fff;
-    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+    --shadow: 8px 16px 40 px 8px rgba(143, 168, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
-    --bg-javascript: #ebf0ff;
+    --bg-javascript: #ebf9ff;
     --bg-acessibilidade: #f6e7ff;
-    --purple: #a729f5;
-    --gren: #26d782;
+    --white: #fff;
+    --green: #26d782;
     --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
@@ -31,6 +33,7 @@ body.escuro {
     --secondary-text-color: #abc1e1;
     --button-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+    --color-span: #313e51;
 }
 body {
     height: 100svh;
@@ -38,7 +41,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-header{
+header {
     display: flex;
     justify-content: space-between;
 padding: 16px 24px;
@@ -79,12 +82,14 @@ padding: 16px 24px;
     border: 0;
     border-radius: 999px;
     padding: 4px;
+    display: flex;
+    cursor: pointer;
 }
 .tema button div {
     background: var(--white);
     width: 12px;
     height: 12px;
-    border-radius: 999px;
+    border-radius: 999px
 }
 main {
     padding: 32px 24px;
@@ -125,11 +130,7 @@ main {
     margin-bottom: 12px;
 }
 
-.alternativas div {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
+
 .alternativas label {
     display: block;
     background: var(--button-bg);
@@ -185,8 +186,20 @@ main {
     justify-content: center;
     border-radius: 5px;
     color: var(--secondary-text-color);
+    border-radius: 5px;
+    color: var(--color-span);
+
     flex-shrink: 0;
 }
+
+.alternativas div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+
+}
+
 .alternativas button {
     padding: 16px;
     border-radius: 12px;
@@ -205,6 +218,13 @@ main {
 }
 
 @media(min-width: 1100px) {
+    body{
+        background: var(--bg-desktop) var(--bg-color);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    
     header {
         margin-block: 81px;
         max-width: 1160px;
