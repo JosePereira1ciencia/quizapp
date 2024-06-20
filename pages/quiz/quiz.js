@@ -99,3 +99,15 @@ async function iniciar() {
 }
 
 iniciar()
+function validarResposta() {
+    if (resposta === quiz.question[pergunta-1].answer){
+        document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta")
+         pontos = pontos + 1
+    } else {
+        document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "errada")
+        document.querySelector(`label[for='${idInputResposta}']`).setAttribute("id", "correta")   
+    }
+}
+if (input.value === quiz.question[pergunta-1].answer) {
+           respostaCorretaId = input.id
+        }
