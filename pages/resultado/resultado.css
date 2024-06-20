@@ -122,7 +122,7 @@ main h2 strong {
 }
 
 .pontuacao {
-    ackground: var(--pontuacao-bg);
+    background: var(--pontuacao-bg);
     padding: 32px;
     display: flex;
     align-items: center;
@@ -131,7 +131,9 @@ main h2 strong {
     flex-direction: column;
     border-radius: 12px;
     margin-bottom: 12px;
+    box-shadow: var(--shadow);
 }
+
 
 .pontuacao strong {
     font-size: 88px;
