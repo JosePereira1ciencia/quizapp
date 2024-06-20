@@ -1,4 +1,4 @@
-* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,33 +7,35 @@
 }
 
 :root {
-    --bg-color: #f4f6fa;
-    --bg-span: #f4f6fa;
-    --color-span: #626c7f;
-    --purple: #a729f5;
+    --bg-color: #F4F6FA;
+    --bg-span: #F4F6Fa;
+    --color-spam: #626C7F;
+    --purple: #A729F5;
     --purple-hover: rgba(167, 41, 245, 0.7);
-    --primary-text-color: #313e51;
-    --secondary-text-color: #626c7f;
-    --pontuacao-bg: #fff;
-    --shadow: 8px 16px 40px 8px rgba(143, 160, 193, 0.14);
-    --bg-html: #fff1e9;
-    --bg-css: #e0fdef;
-    --bg-javascript: #ebf9ff;
-    --bg-acessibilidade: #f6e7ff;
-    --white: #fff;
+    --white: #FFFFFF;
+    --primary-text-color: #313E51;
+    --secondary-text-color: #626C7F;
+    --pontuacao-bg: #FFFFFF;
+    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
+    --bg-html: #FFF1E9;
+    --bg-css: #E0FDEF;
+    --bg-javascript: #EBF0FF;
+    --bg-acessibilidade: #F6E7FF;
+
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 }
 
 body.escuro {
-    --bg-color: #313e51;
-    --color-span: #313e51;
+    --bg-color: #313E51;
+    --color-spam: #313E51;
+    --primary-text-color: #FFFFFF;
+    --secondary-text-color: #ABC1E1;
+    --pontuacao-bg: #3B4B66;
+    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
+
     --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
-    --primary-text-color: #fff;
-    --secondary-text-color: #abc1e1;
-    --pontuacao-bg: #3b4d66;
-    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
 
 body {
@@ -63,10 +65,6 @@ header {
     border-radius: 5px;
 }
 
-.assunto_icone img {
-    width: 100%;
-}
-
 .assunto_icone.html {
     background: var(--bg-html);
 }
@@ -83,6 +81,10 @@ header {
     background: var(--bg-acessibilidade);
 }
 
+.assunto_icone img{
+    width: 100%;
+}
+
 .assunto h1 {
     font-size: 18px;
     font-weight: 500;
@@ -94,12 +96,10 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
-
 }
 
 .tema img {
     width: 16px;
-
 }
 
 .tema button {
@@ -115,13 +115,13 @@ header {
 
 .tema button div {
     background: var(--white);
-    width: 12px;
     height: 12px;
-    border-radius: 999px
+    width: 12px;
+    border-radius: 999px;
 }
 
 main {
-    padding: 32px 24px;
+    padding: 32px 24px
 }
 
 main h2 {
@@ -139,10 +139,9 @@ main h2 strong {
     background: var(--pontuacao-bg);
     padding: 32px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 16px;
-    border-radius: 12px;
-    flex-direction: column;
     border-radius: 12px;
     margin-bottom: 12px;
     box-shadow: var(--shadow);
@@ -166,11 +165,10 @@ main button {
     background: var(--purple);
     color: var(--white);
     width: 100%;
-
     font-size: 18px;
     font-weight: 500;
-    transition: background 0.3s;
     box-shadow: var(--shadow);
+    transition: background 0.3s;
 }
 
 main button:hover {
@@ -202,7 +200,7 @@ main button:hover {
     }
 
     .tema {
-        gap: 16px;
+        gap: 26px;
     }
 
     .tema img {
@@ -226,7 +224,7 @@ main button:hover {
         margin-inline: auto;
     }
 
-    main h2,
+    main h2, 
     main > div {
         width: 100%;
     }
@@ -234,15 +232,16 @@ main button:hover {
     main h2 {
         font-size: 64px;
     }
-.pontuacao {
-border-radius: 24px;
-margin-bottom: 32px;
-}
 
-    .pontuacao strong {
-font-size: 144px;
+    .pontuacao {
+        border-radius: 24px;
+        margin-bottom: 32px;
     }
 
+    .pontuacao strong {
+        font-size: 144px;
+    }
+    
     .pontuacao p {
         font-size: 24px;
     }
