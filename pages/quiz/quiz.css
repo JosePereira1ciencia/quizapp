@@ -1,4 +1,4 @@
-* {
+* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,37 +7,35 @@
 }
 
 :root {
-    --bg-color: #F4F6FA;
-    --bg-span: #F4F6Fa;
-    --color-spam: #626C7F;
-    --purple: #A729F5;
+    --bg-color: #f4f6fa;
+    --bg-span: #f4f6fa;
+    --color-span: #626c7f;
+    --purple: #a729f5;
     --purple-hover: rgba(167, 41, 245, 0.7);
-    --white: #FFFFFF;
-    --primary-text-color: #313E51;
-    --secondary-text-color: #626C7F;
-    --button-bg: #FFFFFF;
-    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
-    --bg-html: #FFF1E9;
-    --bg-css: #E0FDEF;
-    --bg-javascript: #EBF0FF;
-    ---acessibilidade: #F6E7FF;
-    --green: #26D782;
-    --red: #EE5454;
-
+    --primary-text-color: #313e51;
+    --secondary-text-color: #626c7f;
+    --button-bg: #fff;
+    --shadow: 8px 16px 40px 8px rgba(143, 160, 193, 0.14);
+    --bg-html: #fff1e9;
+    --bg-css: #e0fdef;
+    --bg-javascript: #ebf9ff;
+    --bg-acessibilidade: #f6e7ff;
+    --white: #fff;
+    --green: #26d782;
+    --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 }
 
 body.escuro {
-    --bg-color: #313E51;
-    --color-spam: #313E51;
-    --primary-text-color: #FFFFFF;
-    --secondary-text-color: #ABC1E1;
-    --button-bg: #3B4B66;
-    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
-
-    --bg-le: url(../../assets/images/pattern-background-mobile-dark.svg);
+    --bg-color: #313e51;
+    --color-span: #313e51;
+    --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
+    --primary-text-color: #fff;
+    --secondary-text-color: #abc1e1;
+    --button-bg: #3b4d66;
+    --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 }
 
 body {
@@ -82,7 +80,7 @@ header {
     background: var(--bg-acessibilidade);
 }
 
-.assunto_icone img{
+.assunto_icone img {
     width: 100%;
 }
 
@@ -97,10 +95,12 @@ header {
     display: flex;
     align-items: center;
     gap: 8px;
+
 }
 
 .tema img {
     width: 16px;
+
 }
 
 .tema button {
@@ -116,9 +116,9 @@ header {
 
 .tema button div {
     background: var(--white);
-    height: 12px;
     width: 12px;
-    border-radius: 999px;
+    height: 12px;
+    border-radius: 999px
 }
 
 main {
@@ -153,7 +153,7 @@ main {
 
 .barra_progresso div {
     height: 100%;
-    background-color: var(--purple);
+    background: var(--purple);
     border-radius: 999px;
 }
 
@@ -161,6 +161,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    font-size: 18px;
     margin-bottom: 12px;
 }
 
@@ -184,11 +185,11 @@ main {
 }
 
 .alternativas label:has(input:checked) {
-    outline: 2px solid var(--purple);
+    outline: 3px solid var(--purple);
 
     & span {
         background: var(--purple);
-        color: var(--white)
+        color: var(--white);
     }
 }
 
@@ -218,19 +219,21 @@ main {
     display: flex;
     align-items: center;
     gap: 16px;
+
+    
 }
 
 .alternativas div span {
+    display: block;
     width: 40px;
     height: 40px;
     background: var(--bg-span);
-    display: block;
+    border-radius: 5px;
+    color: var(--color-span);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
-    color: var(--color-spam);
     flex-shrink: 0;
 }
 
@@ -241,9 +244,9 @@ main {
     background: var(--purple);
     color: var(--white);
     width: 100%;
+
     font-size: 18px;
     font-weight: 500;
-
     transition: background 0.3s;
 }
 
@@ -253,8 +256,7 @@ main {
 }
 
 @media(min-width: 1100px) {
-
-    body {
+    body{
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
@@ -277,7 +279,7 @@ main {
     }
 
     .tema {
-        gap: 26px;
+        gap: 16px;
     }
 
     .tema img {
@@ -297,6 +299,7 @@ main {
     main {
         max-width: 1160px;
         margin-inline: auto;
+
         display: flex;
         gap: 130px;
     }
@@ -320,17 +323,18 @@ main {
     .pergunta h2 {
         font-size: 36px;
         line-height: 42px;
+
+    }
+
+    .alternativas form {
+        gap: 24px;
+        margin-bottom: 24px;
     }
 
     .alternativas label {
         font-size: 22px;
         padding: 18px 20px;
         border-radius: 24px;
-    }
-
-    .alternativas form {
-        gap: 24px;
-        margin-bottom: 24px;
     }
 
     .alternativas div {
@@ -342,8 +346,8 @@ main {
         height: 56px;
         font-size: 28px;
     }
-    
+
     .alternativas button {
         font-size: 22px;
     }
-}
+} 
