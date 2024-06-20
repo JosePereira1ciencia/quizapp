@@ -1,4 +1,4 @@
-* {
+* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,14 +15,12 @@
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
     --pontuacao-bg: #fff;
-    --shadow: 8px 16px 40 px 8px rgba(143, 168, 193, 0.14);
+    --shadow: 8px 16px 40px 8px rgba(143, 160, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
     --bg-javascript: #ebf9ff;
     --bg-acessibilidade: #f6e7ff;
     --white: #fff;
-    --green: #26d782;
-    --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg);
 }
@@ -67,6 +65,22 @@ header {
 
 .assunto_icone img {
     width: 100%;
+}
+
+.assunto_icone.html {
+    background: var(--bg-html);
+}
+
+.assunto_icone.css {
+    background: var(--bg-css);
+}
+
+.assunto_icone.javascript {
+    background: var(--bg-javascript);
+}
+
+.assunto_icone.acessibilidade {
+    background: var(--bg-acessibilidade);
 }
 
 .assunto h1 {
@@ -134,7 +148,6 @@ main h2 strong {
     box-shadow: var(--shadow);
 }
 
-
 .pontuacao strong {
     font-size: 88px;
     color: var(--primary-text-color);
@@ -157,6 +170,7 @@ main button {
     font-size: 18px;
     font-weight: 500;
     transition: background 0.3s;
+    box-shadow: var(--shadow);
 }
 
 main button:hover {
@@ -220,23 +234,22 @@ main button:hover {
     main h2 {
         font-size: 64px;
     }
+.pontuacao {
+border-radius: 24px;
+margin-bottom: 32px;
+}
 
-    .pontuacao {
+    .pontuacao strong {
+font-size: 144px;
+    }
+
+    .pontuacao p {
+        font-size: 24px;
+    }
+
+    main button {
+        font-size: 22px;
+        padding: 24px;
         border-radius: 24px;
-        margin-bottom: 32px;
-        }
-        
-            .pontuacao strong {
-        font-size: 144px;
-            }
-        
-            .pontuacao p {
-                font-size: 24px;
-            }
-        
-            main button {
-                font-size: 22px;
-                padding: 24px;
-                border-radius: 24px;
-            }
+    }
 }

@@ -28,4 +28,4 @@ export function verificarTema(body, botaoTema) {
         body.classList.remove("escuro");
         botaoTema.style.justifyContent = "flex-start";
     }
-}
+} helpers
