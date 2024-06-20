@@ -20,7 +20,7 @@
     --bg-html: #FFF1E9;
     --bg-css: #E0FDEF;
     --bg-javascript: #EBF0FF;
-    --bg-acessibilidade: #F6E7FF;
+    ---acessibilidade: #F6E7FF;
     --green: #26D782;
     --red: #EE5454;
 
@@ -36,7 +36,7 @@ body.escuro {
     --button-bg: #3B4B66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
 
-    --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
+    --bg-le: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
 }
 
